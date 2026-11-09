@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-097/input.schema.json",
+  "title": "课程版本发布检查输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "course_version",
+    "learning_objectives",
+    "syllabus",
+    "materials",
+    "assessments",
+    "teacher_training",
+    "pricing_contracts",
+    "marketing_assets",
+    "launch_date"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "course_version": {
+      "title": "课程版本",
+      "description": "版本号与发布范围",
+      "type": "string",
+      "minLength": 1
+    },
+    "learning_objectives": {
+      "title": "学习目标",
+      "description": "课程目标",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "syllabus": {
+      "title": "课程大纲",
+      "description": "课时和内容结构",
+      "type": "string",
+      "minLength": 1
+    },
+    "materials": {
+      "title": "课件与练习材料",
+      "description": "文件清单和版本",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "assessments": {
+      "title": "测评与答案",
+      "description": "与课程目标的对应",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "teacher_training": {
+      "title": "教师培训准备",
+      "description": "培训与评分标准",
+      "type": "string",
+      "minLength": 1
+    },
+    "system_configuration": {
+      "title": "系统配置",
+      "description": "课程、班级、价格、权限",
+      "type": "string",
+      "minLength": 1
+    },
+    "pricing_contracts": {
+      "title": "价格与合同",
+      "description": "上线售价和合同口径",
+      "type": "string",
+      "minLength": 1
+    },
+    "marketing_assets": {
+      "title": "营销素材",
+      "description": "上线所需宣传物料",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "launch_date": {
+      "title": "计划上线日期",
+      "description": "ISO 日期或明确日期口径",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

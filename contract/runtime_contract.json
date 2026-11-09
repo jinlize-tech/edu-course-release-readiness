@@ -1,0 +1,107 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-097",
+  "product_name": "课程版本发布检查",
+  "product_type": "Skill",
+  "repository_name": "edu-course-release-readiness",
+  "repository_url": "https://github.com/jinlize-tech/edu-course-release-readiness",
+  "product_version": "1.0.0",
+  "batch": 2,
+  "business_category": "16 课程资产与知识产权中心",
+  "high_risk": false,
+  "deterministic": false,
+  "agent": false,
+  "core_outputs": [
+    "发布就绪报告",
+    "阻断项",
+    "上线批准单"
+  ],
+  "optional_outputs": [
+    "证据清单",
+    "责任人",
+    "回退方案"
+  ],
+  "all_outputs": [
+    "发布就绪报告",
+    "阻断项",
+    "上线批准单",
+    "证据清单",
+    "责任人",
+    "回退方案"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "course_version",
+    "learning_objectives",
+    "syllabus",
+    "materials",
+    "assessments",
+    "teacher_training",
+    "pricing_contracts",
+    "marketing_assets",
+    "launch_date"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "course_version": {
+      "type": "string"
+    },
+    "learning_objectives": {
+      "type": "array"
+    },
+    "syllabus": {
+      "type": "string"
+    },
+    "materials": {
+      "type": "array"
+    },
+    "assessments": {
+      "type": "array"
+    },
+    "teacher_training": {
+      "type": "string"
+    },
+    "system_configuration": {
+      "type": "string"
+    },
+    "pricing_contracts": {
+      "type": "string"
+    },
+    "marketing_assets": {
+      "type": "array"
+    },
+    "launch_date": {
+      "type": "string"
+    }
+  },
+  "expected_scenario_count": 12,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

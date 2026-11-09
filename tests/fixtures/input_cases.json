@@ -1,0 +1,200 @@
+{
+  "cases": [
+    {
+      "case_id": "normal_complete",
+      "expected_status": "READY_FOR_PROCESSING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "course_version": "课程版本已核对（脱敏示例）",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "missing_required",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "invalid_type",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "course_version": 123,
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "unconfirmed",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "unconfirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "course_version": "课程版本已核对（脱敏示例）",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "partial_confirmation",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "partially_confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "course_version": "课程版本已核对（脱敏示例）",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "sensitive_marked",
+      "expected_status": "READY_WITH_PRIVACY_WARNING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": true,
+        "requested_output_language": "zh-CN",
+        "course_version": "课程版本已核对（脱敏示例）",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10"
+      }
+    },
+    {
+      "case_id": "undeclared_field",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "course_version": "课程版本已核对（脱敏示例）",
+        "learning_objectives": [
+          {}
+        ],
+        "syllabus": "课程大纲已核对（脱敏示例）",
+        "materials": [
+          {}
+        ],
+        "assessments": [
+          {}
+        ],
+        "teacher_training": "教师培训准备已核对（脱敏示例）",
+        "system_configuration": "系统配置已核对（脱敏示例）",
+        "pricing_contracts": "价格与合同已核对（脱敏示例）",
+        "marketing_assets": [
+          {}
+        ],
+        "launch_date": "2026-11-10",
+        "未声明字段": "不应被接受"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "number": 97,
+  "product_id": "JLZ-EDU-SK-097",
+  "candidate_id": "CAND-055",
+  "chinese_name": "课程版本发布检查",
+  "english_name": "Course Release Readiness Review",
+  "repository_name": "edu-course-release-readiness",
+  "repository_url": "https://github.com/jinlize-tech/edu-course-release-readiness",
+  "product_type": "Skill",
+  "category": "16 课程资产与知识产权中心",
+  "batch": 2,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "发布就绪报告",
+    "阻断项",
+    "上线批准单"
+  ],
+  "optional_outputs": [
+    "证据清单",
+    "责任人",
+    "回退方案"
+  ],
+  "high_risk": false,
+  "deterministic": false,
+  "scenario_count": 12,
+  "package_path": "dist/edu-course-release-readiness-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}
