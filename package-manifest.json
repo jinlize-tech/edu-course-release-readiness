@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-SK-097",
   "repository_name": "edu-course-release-readiness",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-course-release-readiness-v1.0.0.zip",
-  "sha256": "3287DBAD14011E4E85A4B423F2A94B00D94BD80AE5C6216826D4BF638C863D55",
-  "bytes": 40039,
+  "version": "1.0.1",
+  "package_path": "dist/edu-course-release-readiness-v1.0.1.zip",
+  "sha256": "289428318C87CA0DBD6A80AC50977D957E671E5E1CC3F9D722BD864650386A9B",
+  "bytes": 41079,
   "entries": [
     "edu-course-release-readiness/README.md",
     "edu-course-release-readiness/PRODUCT_SPEC.md",
@@ -34,5 +34,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T12:09:04.213767+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-course-release-readiness-v1.0.0.zip",
+  "previous_package_sha256": "3287DBAD14011E4E85A4B423F2A94B00D94BD80AE5C6216826D4BF638C863D55",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
