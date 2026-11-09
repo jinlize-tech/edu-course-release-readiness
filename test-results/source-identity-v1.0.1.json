@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-097",
+  "repository_name": "edu-course-release-readiness",
+  "version": "1.0.1",
+  "tested_source_commit": "7846919ba98da34354c6c6caa83af01c62e9789e",
+  "tested_source_tree_sha": "93c6da526a55284b7bd854a4b92e7ae6862089bd",
+  "package_path": "dist/edu-course-release-readiness-v1.0.1.zip",
+  "package_sha256": "289428318C87CA0DBD6A80AC50977D957E671E5E1CC3F9D722BD864650386A9B",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 50,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}
